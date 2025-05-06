@@ -1,0 +1,8 @@
+services:
+  myservice-python:
+    build:
+      context: ..
+      dockerfile: builds/Dockerfile
+    image: myservice-python:latest
+    volumes:
+      - ..:/workspace
