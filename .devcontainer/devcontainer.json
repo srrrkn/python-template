@@ -1,13 +1,9 @@
 {
     "name": "myservice-python",
-    "build": {
-        "context": "..",
-        "dockerfile": "../builds/Dockerfile"
-    },
+    "dockerComposeFile": "./docker-compose.yaml",
+    "service": "myservice-python",
     "workspaceFolder": "/workspace",
-    "mounts": [
-        "source=${localWorkspaceFolder},target=/workspace,type=bind"
-    ],
+    "overrideCommand": true,
     "customizations": {
         "vscode": {
             "extensions": [
